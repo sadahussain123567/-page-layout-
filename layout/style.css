@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 32px;
+}
+.navItems {
+  font-size: 20px;
+}
+.menubars {
+  display: none;
+}
+.menu {
+  font-size: 20px;
+}
+.hero {
+  width: 70vw;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.mainHeading {
+  font-size: 70px;
+  font-weight: bolder;
+}
+.subheading {
+  font-size: 40px;
+}
+.inputdiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+.input {
+  padding: 8px;
+  width: 100%;
+}
+.btn {
+  padding: 8px;
+  font-size: 20px;
+  background-color: red;
+  border: none;
+  color: white;
+}
+
+.para {
+  font-size: 30px;
+}
+p {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.box {
+  /* border: 1px solid white; */
+  background-color: darkgrey;
+  padding: 20px;
+}
+.domain {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.price {
+  font-size: 30px;
+}
+
+.hosting {
+  margin-top: 150px;
+}
+.hosting h1 {
+  font-size: 50px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: grey;
+  margin-top: 10px;
+}
+.footer {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+}
+.links {
+  margin-bottom: 10px;
+}
+
+.div333 {
+  background-image: url(oZCrvS.webp);
+  height: 100vh;
+  width: 100vw;
+}
+
+@media screen and (max-width: 500px) {
+  .menubars {
+    display: block;
+  }
+  nav ul {
+    position: absolute;
+    display: none;
+    top: 60px;
+    right: 10px;
+  }
+  .active {
+    display: block;
+  }
+  .navItems {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .hero {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+  }
+  .mainHeading {
+    font-size: 40px;
+  }
+  .subheading {
+    font-size: 20px;
+  }
+  .inputdiv {
+    padding: 10px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+  .para {
+    font-size: 16px;
+  }
+  .boxes {
+    flex-direction: column;
+  }
+  .hosting {
+    margin-top: 100px;
+  }
+  .hosting h1 {
+    font-size: 30px;
+  }
+  .hosting p {
+    font-size: 16px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 90vw;
+  }
+  .boxes {
+    flex-wrap: wrap;
+  }
+  .footer {
+    gap: 50px;
+  }
+}
